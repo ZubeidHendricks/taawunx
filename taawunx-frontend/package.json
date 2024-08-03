@@ -1,0 +1,13 @@
+{
+  "name": "taawunx-frontend",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "axios": "^0.24.0"
+  }
+}
