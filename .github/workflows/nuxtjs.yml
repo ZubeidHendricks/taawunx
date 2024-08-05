@@ -65,7 +65,9 @@ jobs:
           ${manager} ${env.command}
 
       - name: Static HTML export with Nuxt
-        run: ${{ env.manager }} run generate
+        run: |
+          manager=${env.manager}
+          ${manager} run generate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
