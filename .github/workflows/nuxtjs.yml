@@ -36,8 +36,6 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-          env.manager
-          env.command
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -61,12 +59,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          manager=${env.manager}
-          ${manager} ${env.command}
+          ${manager} ${command}
 
       - name: Static HTML export with Nuxt
         run: |
-          manager=${env.manager}
           ${manager} run generate
 
       - name: Upload artifact
