@@ -61,7 +61,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          ${env.manager} ${env.command}
+          manager=${env.manager}
+          ${manager} ${env.command}
 
       - name: Static HTML export with Nuxt
         run: ${{ env.manager }} run generate
