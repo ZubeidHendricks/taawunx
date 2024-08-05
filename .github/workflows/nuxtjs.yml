@@ -78,7 +78,14 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - run: |
+      - name: Log deployment details
+        run: |
           echo "Deploying to GitHub Pages..."
           echo "GitHub Token: ${{ secrets.GITHUB_TOKEN }}"
           echo "Repository Token: ${{ secrets.GITHUB_TOKEN }}"
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          enablement: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository_token: ${{ secrets.GITHUB_TOKEN }}
