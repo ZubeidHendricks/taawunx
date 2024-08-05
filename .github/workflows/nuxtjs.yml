@@ -36,6 +36,8 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+          env.manager
+          env.command
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -58,7 +60,8 @@ jobs:
             ${{ runner.os }}-nuxt-build-
 
       - name: Install dependencies
-        run: ${{ env.manager }} ${{ env.command }}
+        run: |
+          ${env.manager} ${env.command}
 
       - name: Static HTML export with Nuxt
         run: ${{ env.manager }} run generate
