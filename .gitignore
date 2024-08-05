@@ -8,3 +8,5 @@ myenv/
 .vscode 
 # VS Code settings
 .vscode/
+node_modules 
+node_modules/ 
