@@ -1,2 +1,8 @@
 .aider*
 myenv 
+# Virtual Environment
+env/
+venv/
+myenv/
+.env
+.vscode 
