@@ -1,0 +1,18 @@
+{
+  "name": "taawunx",
+  "version": "1.0.0",
+  "description": "TaawunX is a blockchain-based platform that enables Sharia-compliant collaboration among Small and Medium-sized Enterprises (SMEs) in emerging markets. Our platform provides a transparent, secure, and ethical ecosystem for SMEs to work together on projects, share resources, and distribute profits fairly.",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nuxt": "^3.12.4"
+  }
+}
