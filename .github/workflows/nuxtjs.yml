@@ -85,7 +85,3 @@ jobs:
           enablement: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repository_token: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Deploying to GitHub Pages..."
-          echo "GitHub Token: ${{ secrets.GITHUB_TOKEN }}"
-          echo "Repository Token: ${{ secrets.GITHUB_TOKEN }}"
